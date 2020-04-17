@@ -1,0 +1,33 @@
+
+<div mat-dialog-content>
+  <p>Edit User</p>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.user.name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>DOB</mat-label>
+    <input matInput [(ngModel)]="data.user.dateOfBirth">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Status</mat-label>
+    <input matInput [(ngModel)]="data.user.status">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="data.user.email">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Hourly Rate</mat-label>
+    <input matInput [(ngModel)]="data.user.hourlyRate">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.user" cdkFocusInitial>Save</button>
+</div>
+
