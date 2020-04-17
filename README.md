@@ -5,7 +5,7 @@ Clone the repository and run npm install
 Front end includes two pages 
 
 1) Users (/users)
-2) Jobs (/users)
+2) Jobs (/jobs)
 
 
 Included functionality :
